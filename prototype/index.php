@@ -133,10 +133,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
 
     if($SName === "" || $G1 === "" || $G2 === "" || $G3 === ""){
-        echo"All fields must be filled";
+        echo "<div class='result'>
+        All fields must be filled
+      </div>";
+
 }elseif($G1 >= 0 && $G1 <= 20 && $G2 >= 0 && $G2 <= 20 && $G3 >= 0 && $G3 <= 20){
         $av = calculateAverage($AllG);
         getGrade($av, $SName);
+    }else{
+        echo "<div class='result'>
+        invalid input
+      </div>";
     }
 
 }
