@@ -39,8 +39,8 @@ function finaldecision($Fgrade) {
 }
 
 function displaymajor($major_u){
-    if($major_u = "web_dev"){return "Web Developement";}
-    elseif($major_u = "mob_dev") {return "Mobile Developement";}
+    if($major_u === "web_dev"){return "Web Developement";}
+    elseif($major_u === "mob_dev") {return "Mobile Developement";}
     else{return "Software Engineering";}
 
 
